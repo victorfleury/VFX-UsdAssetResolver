@@ -152,7 +152,7 @@ project(${AR_PROJECT_NAME} VERSION 1.0.0 LANGUAGES CXX)
 ### CPP Settings ###
 set(BUILD_SHARED_LIBS ON)
 # Preprocessor Defines (Same as #define)
-add_compile_definitions(_GLIBCXX_USE_CXX11_ABI=0 HBOOST_ALL_NO_LIB BOOST_ALL_NO_LIB)
+add_compile_definitions(_GLIBCXX_USE_CXX11_ABI=1 HBOOST_ALL_NO_LIB BOOST_ALL_NO_LIB)
 if (WIN32)
     add_compile_definitions(NOMINMAX)
 endif()
